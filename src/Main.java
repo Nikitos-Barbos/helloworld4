@@ -5,7 +5,7 @@ public class Main {
         System.out.println();
         System.out.println("Задание 1");
 
-        int age = 12;
+        int age = 22;
         if (age >= 18) {
             System.out.println("Если возраст человека " + age + " он совершеннолетний");
         } else {
@@ -29,7 +29,7 @@ public class Main {
         if (speed >= 60) {
             System.out.println("Если скорость " + speed + " км/ч то, придется заплатить штраф");
         } else {
-            System.out.println("Если скорость " + temp + " км/ч то, можно ездить спокойно");
+            System.out.println("Если скорость " + speed + " км/ч то, можно ездить спокойно");
         }
 
         System.out.println();
@@ -52,9 +52,9 @@ public class Main {
         int childYears = 22;
         if (childYears < 5) {
             System.out.println("Если возраст ребенка равен " + childYears + " то он не может кататься на аттракционе.");
-        } else if (childYears >= 5 && childYears <= 14) {
+        } else if (childYears >= 5 && childYears < 14) {
             System.out.println("Если возраст ребенка равен " + childYears + " то он может кататься только в сопровождении взрослого. Если взрослого нет, то кататься нельзя.");
-        } else if (childYears > 14) {
+        } else if (childYears >= 14) {
             System.out.println("Если возраст ребенка равен " + childYears + " то он может кататься без сопровождения взрослого.");
         }
 
@@ -68,9 +68,9 @@ public class Main {
         int standingRoom = placesInTotal - seatingPlaces;
         if (passengers <= seatingPlaces) {
             System.out.println("В вагоне доступны сидячие места");
-        } else if (passengers >= seatingPlaces && passengers <= placesInTotal) {
+        } else if (passengers >= seatingPlaces && passengers < placesInTotal) {
             System.out.println("В вагоне доступны стоячие места");
-        } else if (passengers > seatingPlaces && passengers > placesInTotal) {
+        } else if (passengers >= placesInTotal) {
             System.out.println("Вагон полностью занят");
         }
 
